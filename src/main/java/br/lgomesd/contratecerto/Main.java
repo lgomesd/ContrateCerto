@@ -15,7 +15,20 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Especialidade e = new Especialidade();
+        
+        e.Cadastrar("Nutricionista");
+        e.Excluir("Nutricionista");
+        e.Cadastrar("Destista");
+        e.Cadastrar("Bombeiro");
+        //e.Excluir("Advogado");
+        //List Consultar = e.Consultar();
+        //for (int i = 0; i < Consultar.countItems(); i++)
+        //    System.out.println(Consultar.getItem(i));
+        //System.out.println(Consultar.getItems());
+        e.Consultar();
+        
     }
     
 }
