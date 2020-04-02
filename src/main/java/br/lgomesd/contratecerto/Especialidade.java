@@ -22,7 +22,15 @@ public class Especialidade {
     
     private String nome;
     private String SQL;
+    //private List<Profissional> profissional = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Especialidade{" + "pstmt=" + pstmt + ", rs=" + rs + ", nome=" + getNome() + '}';
+    }
     
+    
+        
     private void Conexao(String SQL){
         
         Connection con = null;
@@ -91,5 +99,19 @@ public class Especialidade {
                
         return lst;
         }
+
+    /**
+     * @return the nome
+     */
+    public String getNome() {
+        return nome;
+    }
+
+    /**
+     * @param nome the nome to set
+     */
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     
 }
