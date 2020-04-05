@@ -18,6 +18,40 @@ public class Cliente {
     int cpf;
     Date dataNascimento;
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 41 * hash + this.cpf;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Cliente other = (Cliente) obj;
+        if (this.cpf != other.cpf) {
+            return false;
+        }
+        return true;
+    }
+    
+    
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "nome=" + nome + ", endereco=" + endereco + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + '}';
+    }
+    
+    
+
     public String getNome() {
         return nome;
     }
