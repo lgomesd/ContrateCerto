@@ -18,6 +18,36 @@ public class Profissional {
        private int telefone;
        private int numeroCertificado = 0;
 
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 19 * hash + this.CPF;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Profissional other = (Profissional) obj;
+        if (this.CPF != other.CPF) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Profissional{" + "nomecompleto=" + nomecompleto + ", Endereco=" + Endereco + ", email=" + email + ", CPF=" + CPF + ", telefone=" + telefone + ", numeroCertificado=" + numeroCertificado + '}';
+    }
+
     /**
      * @return the nomecompleto
      */
