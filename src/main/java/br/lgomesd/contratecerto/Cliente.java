@@ -18,6 +18,13 @@ public class Cliente {
     int cpf;
     Date dataNascimento;
 
+    @Override
+    public String toString() {
+        return "Cliente{" + "nome=" + nome + ", endereco=" + endereco + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + '}';
+    }
+    
+    
+
     public String getNome() {
         return nome;
     }
