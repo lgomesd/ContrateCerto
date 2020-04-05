@@ -16,7 +16,7 @@ public class Cliente {
     String nome;
     String endereco;
     int cpf;
-    Date dataNascimento;
+    Date dataNascimento;    
 
     @Override
     public int hashCode() {
