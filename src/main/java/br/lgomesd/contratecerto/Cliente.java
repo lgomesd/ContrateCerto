@@ -13,10 +13,11 @@ import java.sql.Date;
  */
 public class Cliente {
     
-    String nome;
-    String endereco;
-    int cpf;
-    Date dataNascimento;    
+    private String nome;
+    private String endereco;
+    private int cpf;
+    private Date dataNascimento;  
+    
 
     @Override
     public int hashCode() {
