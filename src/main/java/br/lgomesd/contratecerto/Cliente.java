@@ -17,6 +17,7 @@ public class Cliente {
     private String endereco;
     private int cpf;
     private Date dataNascimento;
+    
 
     public Cliente(String nome, String endereco, int cpf, Date dataNascimento) {
         this.nome = nome;
