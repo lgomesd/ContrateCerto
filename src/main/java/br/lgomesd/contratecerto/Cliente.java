@@ -12,13 +12,21 @@ import java.sql.Date;
  * @author Adriano Animus
  */
 public class Cliente {
-    
+
     private String nome;
     private String endereco;
     private int cpf;
-    private Date dataNascimento;  
-    
+    private Date dataNascimento;
 
+    public Cliente(String nome, String endereco, int cpf, Date dataNascimento) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.cpf = cpf;
+        this.dataNascimento = dataNascimento;
+    }
+    
+    
+    
     @Override
     public int hashCode() {
         int hash = 7;
@@ -43,15 +51,11 @@ public class Cliente {
         }
         return true;
     }
-    
-    
 
     @Override
     public String toString() {
         return "Cliente{" + "nome=" + nome + ", endereco=" + endereco + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + '}';
     }
-    
-    
 
     public String getNome() {
         return nome;
@@ -84,7 +88,5 @@ public class Cliente {
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-    
-    
-    
+
 }
