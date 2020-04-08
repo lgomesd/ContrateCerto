@@ -48,52 +48,10 @@ public class ContrateCerto {
         System.out.println(" ");
         
         if(opcao == 2){
-          /*  
-            while(op!= 'S'){
-       /*         
-                System.out.println("Cadastro : ");
-                
-                System.out.println("");
-                ler.nextLine();
-                System.out.print(" Informe o nome do cliente : ");
-                String nome = ler.nextLine();
-                System.out.println(" ");
-                
-                System.out.print(" Informe o nome do convenio : ");
-                String nomeConvenio = ler.nextLine();
-                System.out.println(" ");
-                
-                System.out.print(" Informe o numero de telefone do cliente : ");
-                int telefone = ler.nextInt();
-                System.out.println(" ");
-                
-                System.out.print(" Informe o numero da carteirinha do convenio : ");
-                int numeroCarteira = ler.nextInt();
-                System.out.println(" ");
-            */ 
+         
             
                 obj.Cadastro(nome, nomeConvenio, telefone, numeroCarteira);    // COLOCAR NO PRINCIPAL
-            /*     
-                System.out.println("-------------------------------------\n\n\n");
-            
-                System.out.println(obj.toString());
-                        
-                System.out.println("-------------------------------------\n\n\n");
-               
-                System.out.println(" ");
-                
-                
-                
-                System.out.print("\n\n - Tecle (S) para finalizar o cadastro , senão teclar qualquer tecla e enter para continuar : ");              
-                op = ler.next().charAt(0);
-                System.out.println(" ");
-                               
-            }
-                     
-                System.out.println("-------------------------------------\n\n\n");         
-                obj.print();
-                System.out.println("-------------------------------------\n\n\n");
-            */   
+           
         }
         
         System.out.println("Deseja atualizar conveniados ? Se sim teclar (3), para sair teclar qualquer tecla e enter novamente ");
