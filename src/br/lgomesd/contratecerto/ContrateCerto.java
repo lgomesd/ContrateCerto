@@ -1,5 +1,5 @@
 
-package br.igomesd.contratecerto;
+package br.lgomesd.contratecerto;
 
 import java.util.Scanner;
 
