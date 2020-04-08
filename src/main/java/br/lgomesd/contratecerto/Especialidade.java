@@ -7,6 +7,7 @@ package br.lgomesd.contratecerto;
 
 import java.awt.List;
 import java.sql.*;
+import java.util.ArrayList;
 
 /**
  *
@@ -23,6 +24,7 @@ public class Especialidade {
     private String nome;
     private String SQL;
     //private List<Profissional> profissional = new ArrayList<>();
+    //private List<Profissional> profissional;
 
     @Override
     public String toString() {
