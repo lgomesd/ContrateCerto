@@ -84,7 +84,7 @@ public class ConvenioMetodos {
             if (at.getNumeroCarteira() == numeroCarteirinha) {
                 achou = true;
                 System.out.println("II");
-                //System.out.println( "Nome : "+at.getNome()+"\n"+"Numero da carteira :"+ at.getNumeroCarteira()+"\n"+"Nome do convenio : "+at.getNomeConvenio()+"\n"+"Telefone :"+ at.getTelefone());
+                
                 System.out.println(toString());
 
                 break;
