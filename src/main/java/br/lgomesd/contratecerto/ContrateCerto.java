@@ -32,20 +32,10 @@ public class ContrateCerto {
         obj.criarLista();  // COLOCAR NO PROGRAMA PRINCIPAL
         
         int opcao = 0;
-        System.out.println(" Informe a opção desejada ; ");
-        
-        System.out.println(" Cliente ");
         
         System.out.println(" 2 - Convenio_Cadastro ");
         System.out.println(" 3 - Convenio_Consulta ");
-        
-        System.out.println(" especialidades ");
-        System.out.println(" Servicos ");
-        System.out.println(" Profissionais ");
-        System.out.println(" Pagamento ");
-        System.out.println(" Usuarios ");
-        System.out.println(" Recomendação ");
-        System.out.println(" Sair do programa ");
+        System.out.println(" 4 - Validar");
         
         System.out.println("  ");
         opcao = ler.nextInt();
