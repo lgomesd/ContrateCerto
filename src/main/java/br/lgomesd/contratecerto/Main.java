@@ -21,7 +21,9 @@ public class Main {
         e.Cadastrar("Nutricionista");
         e.Excluir("Nutricionista");
         e.Cadastrar("Destista");
+        //e.Excluir("Destista");
         e.Cadastrar("Bombeiro");
+        //e.Excluir("Bombeiro");
         //e.Excluir("Advogado");
         //List Consultar = e.Consultar();
         //for (int i = 0; i < Consultar.countItems(); i++)

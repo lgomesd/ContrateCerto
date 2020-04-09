@@ -5,8 +5,9 @@
  */
 package br.lgomesd.contratecerto;
 
-import java.awt.List;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -16,13 +17,13 @@ public class Especialidade {
     
     private static final String USERNAME="root";
     private static final String PASSWORD="";
-    private static final String CONN_STRING="jdbc:mysql://localhost:3306/contratecerto";
-    private PreparedStatement pstmt = null;
-    private ResultSet rs = null;
+    private static final String CONN_STRING="jdbc:mysql://localhost:3306/projetointegrador";
+    private final PreparedStatement pstmt = null;
+    private final ResultSet rs = null;
     
     private String nome;
     private String SQL;
-    //private List<Profissional> profissional = new ArrayList<>();
+    private final List<Profissional> profissional = new ArrayList<>();
 
     @Override
     public String toString() {
@@ -33,7 +34,7 @@ public class Especialidade {
         
     private void Conexao(String SQL){
         
-        Connection con = null;
+        Connection con;
         
         
         try{
@@ -74,10 +75,10 @@ public class Especialidade {
         
     }
     
-    public List Consultar(){
-        List lst = new List(50, false);        
+    public void Consultar(){
+        //List lst = new List(50, false);        
 
-                Connection con = null;
+                Connection con;
         
         
         try{
@@ -97,7 +98,7 @@ public class Especialidade {
                 System.out.println("entrei aqui 2");// debugando
     }
                
-        return lst;
+        //return lst;
         }
 
     /**
