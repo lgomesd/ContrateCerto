@@ -14,8 +14,8 @@ public class Convenio {
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 67 * hash + this.numeroCarteira;
+        int hash = 7;
+        hash = 59 * hash + this.numeroCarteira;
         return hash;
     }
 
