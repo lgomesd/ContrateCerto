@@ -6,6 +6,9 @@
  */
 package br.lgomesd.contratecerto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Charliston Rodrigo
@@ -39,14 +42,18 @@ public class Convenio {
     private  String nomeConvenio;
     private  int telefone;
     private int numeroCarteira;
+    private List<Servico>servico;
     Convenio prox;
     
-     public Convenio(String nome, String nomeConvenio, int telefone, int numeroCarteira){
+     public Convenio(String nome, String nomeConvenio, int telefone, int numeroCarteira, Servico serv){
     
          this.nome = nome;
          this.nomeConvenio = nomeConvenio;        
          this.telefone = telefone;
          this.numeroCarteira = numeroCarteira;
+         
+         servico = new ArrayList();
+         servico.add(serv);
     }
      
     public Convenio(){   
