@@ -18,6 +18,11 @@ public class Cliente {
     private int cpf;
     private Date dataNascimento;
     
+    public Boolean Cadastrar(String nome){
+        return null;
+        
+    }
+    
 
     public Cliente(String nome, String endereco, int cpf, Date dataNascimento) {
         this.nome = nome;
