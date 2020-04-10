@@ -5,6 +5,7 @@
  */
 package br.lgomesd.contratecerto;
 
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -18,6 +19,7 @@ public class ContrateCerto {
    private static int telefone;                      // COLOCAR NO PROGRAMA PRINCIPAL
    private static int numeroCarteira;
    private static int numeroCarteirinha;
+   private static Servico serv;
     
     public static void main(String[] args) {
        
@@ -44,7 +46,7 @@ public class ContrateCerto {
         if(opcao == 2){
          
             
-                obj.Cadastro(nome, nomeConvenio, telefone, numeroCarteira);    // COLOCAR NO PRINCIPAL
+                obj.Cadastro(nome, nomeConvenio, telefone, numeroCarteira, serv);    // COLOCAR NO PRINCIPAL
            
         }
         
