@@ -18,7 +18,7 @@ public class Cliente {
     private int cpf;
     private Date dataNascimento;
     
-    public Boolean Cadastrar(String nome){
+    public Boolean Cadastrar(String nome, String endereco, int cpf, Date dataNascimento){
         return null;
         
     }
