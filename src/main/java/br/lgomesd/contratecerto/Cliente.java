@@ -14,7 +14,7 @@ public class Cliente {
     private String endereco;
     private int cpf;
     private Date dataNascimento;
-    
+    private List cadastrar = new ArrayList<>();
     
     public boolean cadastrar(String nome, String endereco, int cpf, Date dataNascimento){
         return false;
