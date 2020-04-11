@@ -17,6 +17,9 @@ public class Cliente {
     private List cadastrar = new ArrayList<>();
     
     public boolean cadastrar(String nome, String endereco, int cpf, Date dataNascimento){
+        if(nome.isEmpty()){
+            System.out.println("Nome não pode ser vazio");      
+        }
         return false;
         
     }
