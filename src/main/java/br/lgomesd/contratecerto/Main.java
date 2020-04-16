@@ -16,9 +16,9 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        Especialidade e = new Especialidade();
+        Especialidade e = new Especialidade("Nutricionista");
         
-        e.Cadastrar("Nutricionista");
+        e.Cadastrar("Advogado");
         e.Excluir("Nutricionista");
         e.Cadastrar("Destista");
         //e.Excluir("Destista");
