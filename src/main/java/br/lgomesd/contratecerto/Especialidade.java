@@ -26,7 +26,11 @@ public class Especialidade {
     private String nome;
     private String SQL;
     private final List<Profissional> profissional = new ArrayList<>();
-     
+
+    public Especialidade(String nome) {
+        this.nome = nome;
+    }
+        
     private void Conexao(String SQL){
         
         Connection con;
