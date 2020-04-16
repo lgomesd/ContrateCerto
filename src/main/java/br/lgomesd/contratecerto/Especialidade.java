@@ -12,7 +12,8 @@ import java.util.Objects;
 
 /**
  *
- * @author lgome
+ * @author Leonardo Gomes Duarte - RA 12105384
+ * Classe para cadastro, exclusão e consulta de Especialidades Profissionais
  */
 public class Especialidade {
     
@@ -41,7 +42,11 @@ public class Especialidade {
                 System.out.println("entrei aqui 2");// handle the error
     }
     }
-        
+    /**
+     * Recebe uma String nome para cadastro no banco de dados
+     * @param nome
+     * @return true or false
+     */    
     public Boolean Cadastrar(String nome){
         if(nome.isEmpty()){
             System.out.println("Nome não pode ser vazio");
@@ -54,7 +59,11 @@ public class Especialidade {
         }
         
     }
-    
+    /**
+     * Recebe uma String nome para realizar a exclusão no banco de dados
+     * @param nome
+     * @return true or false
+     */
     public Boolean Excluir(String nome){
         if(nome.isEmpty()){
             System.out.println("Nome não pode ser vazio");
@@ -68,7 +77,9 @@ public class Especialidade {
         }        
         
     }
-    
+    /**
+     * Lista todas as especialidades cadastradas no banco de dados
+     */
     public void Consultar(){
         //List lst = new List(50, false);        
 
