@@ -8,6 +8,7 @@ package br.lgomesd.contratecerto;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -24,14 +25,7 @@ public class Especialidade {
     private String nome;
     private String SQL;
     private final List<Profissional> profissional = new ArrayList<>();
-
-    @Override
-    public String toString() {
-        return "Especialidade{" + "pstmt=" + pstmt + ", rs=" + rs + ", nome=" + getNome() + '}';
-    }
-    
-    
-        
+     
     private void Conexao(String SQL){
         
         Connection con;
@@ -114,5 +108,37 @@ public class Especialidade {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    @Override
+    public String toString() {
+        return "Especialidade{" + "nome=" + nome + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 67 * hash + Objects.hashCode(this.nome);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Especialidade other = (Especialidade) obj;
+        if (!Objects.equals(this.nome, other.nome)) {
+            return false;
+        }
+        return true;
+    }
+
+
     
 }
