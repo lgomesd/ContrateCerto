@@ -5,6 +5,10 @@
  */
 package br.lgomesd.contratecerto;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 /**
  *
  * @author lgome
@@ -16,20 +20,29 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        Especialidade e = new Especialidade("Nutricionista");
+        //Especialidade e = new Especialidade();
+        /* String nome = "Advogado";
+        e.setNome(nome);
         
-        e.Cadastrar("Advogado");
-        e.Excluir("Nutricionista");
-        e.Cadastrar("Destista");
+        
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("ContrateCertoPU");
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+            em.persist(e);
+            em.getTransaction().commit(); */
+        
+        //e.Cadastrar("Advogado");
+        //e.Excluir("Nutricionista");
+        //e.Cadastrar("Destista");
         //e.Excluir("Destista");
-        e.Cadastrar("Bombeiro");
+        //e.Cadastrar("Bombeiro");
         //e.Excluir("Bombeiro");
         //e.Excluir("Advogado");
         //List Consultar = e.Consultar();
         //for (int i = 0; i < Consultar.countItems(); i++)
         //    System.out.println(Consultar.getItem(i));
         //System.out.println(Consultar.getItems());
-        e.Consultar();
+        //e.Consultar();
         
     }
     

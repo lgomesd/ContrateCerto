@@ -9,106 +9,93 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 /**
  *
  * @author Leonardo Gomes Duarte - RA 12105384
  * Classe para cadastro, exclusão e consulta de Especialidades Profissionais
  */
+@Entity
+
 public class Especialidade {
     
-    private static final String USERNAME="root";
-    private static final String PASSWORD="";
-    private static final String CONN_STRING="jdbc:mysql://localhost:3306/projetointegrador";
-    private final PreparedStatement pstmt = null;
-    private final ResultSet rs = null;
+    //private EntityManager em;
     
-    private String nome;
-    private String SQL;
-    private final List<Profissional> profissional = new ArrayList<>();
 
-    public Especialidade(String nome) {
-        this.nome = nome;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_especialidade")
+    private Integer id;
+    @Column(name = "nom_nome", nullable = false, unique = true, length = 100)
+    private String nome;
+    
+    //private final List<Profissional> profissional = new ArrayList<>();
+
+        
+    public Especialidade() {
     }
         
-    private void Conexao(String SQL){
-        
-        Connection con;
-        
-        
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(CONN_STRING,USERNAME,PASSWORD);
-            Statement stmt = (Statement) con.createStatement();
-            stmt.execute(SQL);
-        } catch (SQLException | ClassNotFoundException e){
-            System.err.println(e);
-                System.out.println("entrei aqui 2");// handle the error
-    }
-    }
     /**
      * Recebe uma String nome para cadastro no banco de dados
      * @param nome
      * @return true or false
      */    
-    public Boolean Cadastrar(String nome){
+    /* public Boolean Cadastrar(String nome){
         if(nome.isEmpty()){
             System.out.println("Nome não pode ser vazio");
             return false;
         }
         else {
-            SQL = "INSERT INTO projetointegrador.especialidades(nome) VALUE ('"+nome+"')";
-            Conexao(SQL);
+            
+            em.getTransaction().begin();
+            em.persist(nome);
+            em.getTransaction().commit();
             return true;
         }
         
-    }
+    } */
     /**
      * Recebe uma String nome para realizar a exclusão no banco de dados
      * @param nome
      * @return true or false
      */
-    public Boolean Excluir(String nome){
+    /*public Boolean Excluir(String nome){
         if(nome.isEmpty()){
             System.out.println("Nome não pode ser vazio");
             return false;
         }
         else {
-            SQL = "DELETE FROM projetointegrador.especialidades WHERE nome='"+nome+"'";
-            Conexao(SQL);
+            em.getTransaction().begin();
+            em.remove(nome);
+            em.getTransaction().commit();
             System.out.println("Especialidade " + nome + " excluído com sucesso!");
             return true;
         }        
         
-    }
+    } */
     /**
      * Lista todas as especialidades cadastradas no banco de dados
+     * @return 
      */
-    public void Consultar(){
+    /* public List<String> Consultar(){
         //List lst = new List(50, false);        
 
-                Connection con;
-        
-        
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(CONN_STRING,USERNAME,PASSWORD);
-            Statement stmt = (Statement) con.createStatement();
-            SQL = "SELECT nome FROM projetointegrador.especialidades";
-            ResultSet rs = stmt.executeQuery(SQL);
-            while (rs.next()){
-                String resultado = rs.getString("nome");
-                System.out.println(resultado);
-                //lst.add(rs.getString(nome));
-                
-            }
-        } catch (SQLException | ClassNotFoundException e){
-            System.err.println(e);
-                System.out.println("entrei aqui 2");// debugando
-    }
-               
-        //return lst;
-        }
+            TypedQuery<String> query;
+        query = em.createQuery(
+                "SELECT nom_nome FROM contrate_certo.especialidade", String.class);
+            List<String> results = query.getResultList();
+
+        return results;
+        } */
 
     /**
      * @return the nome
