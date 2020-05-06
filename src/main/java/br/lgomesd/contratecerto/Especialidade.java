@@ -96,6 +96,9 @@ public class Especialidade {
 
         return results;
         } */
+    public Integer getId() {
+        return id;
+    }
 
     /**
      * @return the nome
