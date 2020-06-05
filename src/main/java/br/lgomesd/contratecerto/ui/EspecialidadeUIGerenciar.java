@@ -6,7 +6,7 @@
 package br.lgomesd.contratecerto.ui;
 
 import br.lgomesd.contratecerto.Especialidade;
-import br.lgomesd.contratecerto.Especialidade_;
+//import br.lgomesd.contratecerto.Especialidade_;
 import java.util.Arrays;
 import java.util.List;
 import javax.persistence.EntityManager;
