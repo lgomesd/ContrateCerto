@@ -5,19 +5,12 @@
  */
 package br.lgomesd.contratecerto;
 
-import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
 
 /**
  *
