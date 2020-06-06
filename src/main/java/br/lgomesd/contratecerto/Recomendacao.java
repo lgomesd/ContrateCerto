@@ -5,26 +5,33 @@
  */
 package br.lgomesd.contratecerto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Rosangela
  */
 public class Recomendacao {
     
-     private int Avaliação = 0;
+     private int Avaliacao = 0;
      private String Depoimentos;
-     private Profissional profissional;
-
-    public boolean cadastrar(String Depoimentos, int Avaliação){
+     private List <Profissional> profissional; 
+     
+        public Recomendacao () {
+           this.profissional = new ArrayList();      
+       }
+     
+    public boolean cadastrar(String Depoimentos, int Avaliacao){
             return false;
        }
      
-      public boolean Excluir(String Depoimentos, int Avaliação){
+      public boolean Excluir(String Depoimentos, int Avaliacao){
         if(Depoimentos.isEmpty()){
             return false;
         }
         else {
-              System.out.println("Depoimentos" + Avaliação + " excluída com sucesso!");
+              System.out.println("Depoimentos" + Avaliacao + " excluída com sucesso!");
             return true;
         }        
         
@@ -32,22 +39,22 @@ public class Recomendacao {
       
           @Override
     public String toString() {
-        return "Recomendacao{" + "Avalia\u00e7\u00e3o=" + Avaliação + ", Depoimentos=" + Depoimentos + '}';
+        return "Recomendacao{" + "Avalia\u00e7\u00e3o=" + Avaliacao + ", Depoimentos=" + Depoimentos + '}';
     }
     
 
     /**
      * @return the Avaliação
      */
-    public int getAvaliação() {
-        return Avaliação;
+    public int getAvaliacao() {
+        return Avaliacao;
     }
 
     /**
-     * @param Avaliação the Avaliação to set
+     * @param Avaliacao the Avaliação to set
      */
-    public void setAvaliação(int Avaliação) {
-        this.Avaliação = Avaliação;
+    public void setAvaliacao(int Avaliacao) {
+        this.Avaliacao = Avaliacao;
     }
 
     /**
