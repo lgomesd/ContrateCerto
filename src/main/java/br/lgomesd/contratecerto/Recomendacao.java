@@ -13,10 +13,10 @@ public class Recomendacao {
     
      private int Avaliação = 0;
      private String Depoimentos;
+     private Profissional profissional;
 
-     
     public boolean cadastrar(String Depoimentos, int Avaliação){
-           return false;
+            return false;
        }
      
       public boolean Excluir(String Depoimentos, int Avaliação){
@@ -64,6 +64,4 @@ public class Recomendacao {
         this.Depoimentos = Depoimentos;
     }
 
-
-    
  } 
