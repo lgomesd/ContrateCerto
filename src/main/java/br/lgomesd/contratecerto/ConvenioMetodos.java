@@ -1,6 +1,9 @@
 
-
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package br.lgomesd.contratecerto;
 
 import java.util.Scanner;
@@ -21,8 +24,8 @@ public class ConvenioMetodos {
         tamanho = 0;
     }
 
-    public void Cadastro(String nome, String nomeConvenio, int telefone, int numeroCarteira) {
-        v = new Convenio(nome, nomeConvenio, telefone, numeroCarteira);
+    public void Cadastro(String nome, String nomeConvenio, int telefone, int numeroCarteira, Servico serv) {
+        v = new Convenio(nome, nomeConvenio, telefone, numeroCarteira, serv);
 
         char op = ' ';
         while (op != 'S') {
@@ -46,7 +49,7 @@ public class ConvenioMetodos {
             numeroCarteira = ler.nextInt();
             System.out.println(" ");
 
-            v = new Convenio(nome, nomeConvenio, telefone, numeroCarteira);
+            v = new Convenio(nome, nomeConvenio, telefone, numeroCarteira,serv);
 
             if (tamanho == 0) {
                 cabeca = cauda = v;
