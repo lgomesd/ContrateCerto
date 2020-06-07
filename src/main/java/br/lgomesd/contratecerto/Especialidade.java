@@ -15,7 +15,8 @@ import javax.persistence.Id;
 /**
  *
  * @author Leonardo Gomes Duarte - RA 12105384
- * Classe para cadastro, exclusão e consulta de Especialidades Profissionais
+ * Classe que define as Especialidades Profissionais
+ * A Classe que manipula os objetos desta classe é a EspecialidadeUIGerenciar.java
  */
 @Entity
 
@@ -23,17 +24,30 @@ public class Especialidade {
     
     //private EntityManager em;
     
-
+/**
+ * Define algumas anotações para manupulação do banco de dados.
+ */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_especialidade")
+/**
+ * Define a variável ID
+ */
     private Integer id;
+/**
+ * Define alguns parâmetros da coluna nome no banco de dados
+ */
     @Column(name = "nom_nome", nullable = false, unique = true, length = 100)
+/**
+ * Define variável nome
+ */
     private String nome;
     
     //private final List<Profissional> profissional = new ArrayList<>();
 
-        
+/**
+ * Método construtor vazio
+ */        
     public Especialidade() {
     }
         
@@ -89,6 +103,10 @@ public class Especialidade {
 
         return results;
         } */
+/**
+ * Define métodos gets, setters, hascode, toString, equals
+ * @return 
+ */
     public Integer getId() {
         return id;
     }
