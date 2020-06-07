@@ -17,7 +17,15 @@ public class Usuario {
     private String senha;
     private String email;
     
+    public boolean logar(String usuario, String senha){
+        return false;
+        
     
+}
+    
+    public void RecuperarSenha(String email){
+        
+    }
 
     @Override
     public int hashCode() {
