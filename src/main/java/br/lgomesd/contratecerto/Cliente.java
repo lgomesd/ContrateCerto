@@ -1,11 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.lgomesd.contratecerto;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -17,7 +14,25 @@ public class Cliente {
     private String endereco;
     private int cpf;
     private Date dataNascimento;
+    private List cadastrar = new ArrayList<>();
     
+    public boolean cadastrar(String nome, String endereco, int cpf, Date dataNascimento){
+        if(nome.isEmpty()){
+            System.out.println("Nome não pode ser vazio");      
+        }
+        return false;
+        
+    }
+    public boolean excluir(String nome, String endereco, int cpf, Date dataNascimento){
+        if(nome.isEmpty()){
+            return false;
+        }else{
+            System.out.println(" Cadastro " + nome + " excluido! ");
+        return true;
+    }
+    }
+        
+       
 
     public Cliente(String nome, String endereco, int cpf, Date dataNascimento) {
         this.nome = nome;
@@ -25,9 +40,7 @@ public class Cliente {
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
     }
-    
-    
-    
+
     @Override
     public int hashCode() {
         int hash = 7;

@@ -17,7 +17,23 @@ public class Profissional {
        private int CPF = 0;
        private int telefone;
        private int numeroCertificado = 0;
-
+       
+       
+       public boolean cadastrar(String nomecompleto, String endereco, String email, int CPF, int telefone,int numeroCertificado){
+           return false;
+       }
+     
+      public boolean Excluir(String nomecompleto, String endereco, String email, int CPF, int telefone,int numeroCertificado){
+        if(nomecompleto.isEmpty()){
+            return false;
+        }
+        else {
+              System.out.println("Especialidade " + nomecompleto + " excluído com sucesso!");
+            return true;
+        }        
+        
+    }
+  
     @Override
     public int hashCode() {
         int hash = 5;
@@ -131,7 +147,6 @@ public class Profissional {
     public void setNumeroCertificado(int numeroCertificado) {
         this.numeroCertificado = numeroCertificado;
     }
-       
-       
+
     
 }
