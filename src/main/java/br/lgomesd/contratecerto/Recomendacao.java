@@ -16,8 +16,13 @@ public class Recomendacao {
     
      private int Avaliacao = 0;
      private String Depoimentos;
-     private List <Profissional> profissional; 
+     private List <Profissional> profissional = new ArrayList <>();
+
+    public Recomendacao(String Depoimentos) {
+        this.Depoimentos = Depoimentos;
+    }
      
+         
         public Recomendacao () {
            this.profissional = new ArrayList();      
        }

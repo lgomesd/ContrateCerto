@@ -8,10 +8,10 @@ package br.lgomesd.contratecerto;
 /**
  *
  * @author Rosangela
- */
-public class Pagamento {
-    
-  //API: https://developercielo.github.io/manual/cielo-ecommerce 
-        
-        
+ */ //API: https://developercielo.github.io/manual/cielo-ecommerce 
+   //https://github.com/DeveloperCielo/API-3.0-Java
+  //https://www.upinside.com.br/ //*
+
+public class Pagamento {     
+
 }

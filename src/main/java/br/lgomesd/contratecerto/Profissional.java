@@ -5,6 +5,9 @@
  */
 package br.lgomesd.contratecerto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Rosangela
@@ -17,6 +20,12 @@ public class Profissional {
        private int CPF = 0;
        private int telefone;
        private int numeroCertificado = 0;
+       private List recomendacao;
+       
+              
+       public Profissional () {
+           recomendacao = new ArrayList();
+       }
        
        
        public boolean cadastrar(String nomecompleto, String endereco, String email, int CPF, int telefone,int numeroCertificado){
