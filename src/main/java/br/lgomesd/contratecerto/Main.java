@@ -44,6 +44,13 @@ public class Main {
         //System.out.println(Consultar.getItems());
         //e.Consultar();
         
+        // Utilizando a classe especialidade
+        Especialidade especialidade1 = new Especialidade();
+        
+        especialidade1.setNome("Advogado");
+        
+        System.out.println(especialidade1);
+        
     }
     
 }
