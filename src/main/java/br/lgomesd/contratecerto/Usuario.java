@@ -26,6 +26,10 @@ public class Usuario {
     public void RecuperarSenha(String email){
         
     }
+    
+    public void Logout(){
+        
+    }
 
     @Override
     public int hashCode() {
