@@ -96,4 +96,10 @@ public class Convenio {
     public void setNomeConvenio(String nomeConvenio) {
         this.nomeConvenio = nomeConvenio;
     }
+
+    @Override
+    public String toString() {
+        return "Convenio{" + "nome=" + nome + ", nomeConvenio=" + nomeConvenio + ", telefone=" + telefone + ", numeroCarteira=" + numeroCarteira + ", servico=" + servico + ", prox=" + prox + '}';
+    }
+    
 }
