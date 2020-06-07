@@ -19,7 +19,7 @@ import javax.swing.text.html.HTML;
 
 /**
  *
- * @author lgome
+ * @author Leonardo Gomes Duarte - RA 12105384
  */
 public class EspecialidadeUIGerenciar extends javax.swing.JDialog {
 
