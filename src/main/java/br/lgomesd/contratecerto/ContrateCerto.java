@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.lgomesd.contratecerto;
+package br.lgomesd.contratecerto; 
 
 import java.util.List;
 import java.util.Scanner;
@@ -13,7 +13,12 @@ import java.util.Scanner;
  * @author Charliston Rodrigo
  */
 public class ContrateCerto {
+ 
     
+    
+    
+    
+    /*
    private static String nome;
    private static String nomeConvenio;
    private static int telefone;                      // COLOCAR NO PROGRAMA PRINCIPAL
@@ -72,5 +77,5 @@ public class ContrateCerto {
         }
       
     }
-
+*/
 }
